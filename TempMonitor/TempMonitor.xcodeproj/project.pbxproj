@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A67CD65519E4AEE100B8878F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD65419E4AEE100B8878F /* main.m */; };
+		A67CD65819E4AEE100B8878F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD65719E4AEE100B8878F /* AppDelegate.m */; };
+		A67CD65B19E4AEE100B8878F /* TakeTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD65A19E4AEE100B8878F /* TakeTempViewController.m */; };
+		A67CD65E19E4AEE100B8878F /* PeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD65D19E4AEE100B8878F /* PeopleViewController.m */; };
+		A67CD66119E4AEE100B8878F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67CD65F19E4AEE100B8878F /* Main.storyboard */; };
+		A67CD66319E4AEE100B8878F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67CD66219E4AEE100B8878F /* Images.xcassets */; };
+		A67CD66619E4AEE100B8878F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A67CD66419E4AEE100B8878F /* LaunchScreen.xib */; };
+		A67CD67219E4AEE100B8878F /* TempMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD67119E4AEE100B8878F /* TempMonitorTests.m */; };
+		A67CD68219E4B0F700B8878F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD68119E4B0F700B8878F /* Person.m */; };
+		A67CD68519E4B88000B8878F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD68419E4B88000B8878F /* DataManager.m */; };
+		A67CD68819E4C27A00B8878F /* TemperatureReading.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD68719E4C27A00B8878F /* TemperatureReading.m */; };
+		A67CD68E19E52D8600B8878F /* PeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD68D19E52D8600B8878F /* PeopleTableViewController.m */; };
+		A67CD69119E52FB200B8878F /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD69019E52FB200B8878F /* AppManager.m */; };
+		A67CD69519E530B200B8878F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD69419E530B200B8878F /* Reachability.m */; };
+		A67CD69819E5319B00B8878F /* EulaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD69719E5319B00B8878F /* EulaVC.m */; };
+		A67CD69A19E5322D00B8878F /* tempmon_eula.html in Resources */ = {isa = PBXBuildFile; fileRef = A67CD69919E5322D00B8878F /* tempmon_eula.html */; };
+		A67CD69D19E5502C00B8878F /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD69C19E5502C00B8878F /* NewPersonViewController.m */; };
+		A67CD6A019E565EE00B8878F /* SelectPersonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD69F19E565EE00B8878F /* SelectPersonTableViewController.m */; };
+		A67CD6A319E5696600B8878F /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD6A219E5696600B8878F /* SubmitViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A67CD66C19E4AEE100B8878F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A67CD64719E4AEE100B8878F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A67CD64E19E4AEE100B8878F;
+			remoteInfo = TempMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A67CD64F19E4AEE100B8878F /* TempMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67CD65319E4AEE100B8878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67CD65419E4AEE100B8878F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A67CD65619E4AEE100B8878F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A67CD65719E4AEE100B8878F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A67CD65919E4AEE100B8878F /* TakeTempViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TakeTempViewController.h; sourceTree = "<group>"; };
+		A67CD65A19E4AEE100B8878F /* TakeTempViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TakeTempViewController.m; sourceTree = "<group>"; };
+		A67CD65C19E4AEE100B8878F /* PeopleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeopleViewController.h; sourceTree = "<group>"; };
+		A67CD65D19E4AEE100B8878F /* PeopleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeopleViewController.m; sourceTree = "<group>"; };
+		A67CD66019E4AEE100B8878F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A67CD66219E4AEE100B8878F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A67CD66519E4AEE100B8878F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A67CD66B19E4AEE100B8878F /* TempMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67CD67019E4AEE100B8878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67CD67119E4AEE100B8878F /* TempMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempMonitorTests.m; sourceTree = "<group>"; };
+		A67CD68019E4B0F700B8878F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A67CD68119E4B0F700B8878F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		A67CD68319E4B88000B8878F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		A67CD68419E4B88000B8878F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		A67CD68619E4C27A00B8878F /* TemperatureReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureReading.h; sourceTree = "<group>"; };
+		A67CD68719E4C27A00B8878F /* TemperatureReading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureReading.m; sourceTree = "<group>"; };
+		A67CD68C19E52D8600B8878F /* PeopleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleTableViewController.h; sourceTree = "<group>"; };
+		A67CD68D19E52D8600B8878F /* PeopleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleTableViewController.m; sourceTree = "<group>"; };
+		A67CD68F19E52FB200B8878F /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
+		A67CD69019E52FB200B8878F /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
+		A67CD69219E5309B00B8878F /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = "<group>"; };
+		A67CD69319E530B200B8878F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A67CD69419E530B200B8878F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A67CD69619E5319B00B8878F /* EulaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EulaVC.h; sourceTree = "<group>"; };
+		A67CD69719E5319B00B8878F /* EulaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EulaVC.m; sourceTree = "<group>"; };
+		A67CD69919E5322D00B8878F /* tempmon_eula.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tempmon_eula.html; sourceTree = "<group>"; };
+		A67CD69B19E5502C00B8878F /* NewPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPersonViewController.h; sourceTree = "<group>"; };
+		A67CD69C19E5502C00B8878F /* NewPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPersonViewController.m; sourceTree = "<group>"; };
+		A67CD69E19E565EE00B8878F /* SelectPersonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPersonTableViewController.h; sourceTree = "<group>"; };
+		A67CD69F19E565EE00B8878F /* SelectPersonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPersonTableViewController.m; sourceTree = "<group>"; };
+		A67CD6A119E5696600B8878F /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
+		A67CD6A219E5696600B8878F /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A67CD64C19E4AEE100B8878F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67CD66819E4AEE100B8878F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A67CD64619E4AEE100B8878F = {
+			isa = PBXGroup;
+			children = (
+				A67CD65119E4AEE100B8878F /* TempMonitor */,
+				A67CD66E19E4AEE100B8878F /* TempMonitorTests */,
+				A67CD65019E4AEE100B8878F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A67CD65019E4AEE100B8878F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A67CD64F19E4AEE100B8878F /* TempMonitor.app */,
+				A67CD66B19E4AEE100B8878F /* TempMonitorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A67CD65119E4AEE100B8878F /* TempMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				A67CD65619E4AEE100B8878F /* AppDelegate.h */,
+				A67CD65719E4AEE100B8878F /* AppDelegate.m */,
+				A67CD68F19E52FB200B8878F /* AppManager.h */,
+				A67CD69019E52FB200B8878F /* AppManager.m */,
+				A67CD68319E4B88000B8878F /* DataManager.h */,
+				A67CD68419E4B88000B8878F /* DataManager.m */,
+				A67CD69219E5309B00B8878F /* Debug.h */,
+				A67CD69619E5319B00B8878F /* EulaVC.h */,
+				A67CD69719E5319B00B8878F /* EulaVC.m */,
+				A67CD66219E4AEE100B8878F /* Images.xcassets */,
+				A67CD66419E4AEE100B8878F /* LaunchScreen.xib */,
+				A67CD65F19E4AEE100B8878F /* Main.storyboard */,
+				A67CD69B19E5502C00B8878F /* NewPersonViewController.h */,
+				A67CD69C19E5502C00B8878F /* NewPersonViewController.m */,
+				A67CD68C19E52D8600B8878F /* PeopleTableViewController.h */,
+				A67CD68D19E52D8600B8878F /* PeopleTableViewController.m */,
+				A67CD65C19E4AEE100B8878F /* PeopleViewController.h */,
+				A67CD65D19E4AEE100B8878F /* PeopleViewController.m */,
+				A67CD68019E4B0F700B8878F /* Person.h */,
+				A67CD68119E4B0F700B8878F /* Person.m */,
+				A67CD69319E530B200B8878F /* Reachability.h */,
+				A67CD69419E530B200B8878F /* Reachability.m */,
+				A67CD69E19E565EE00B8878F /* SelectPersonTableViewController.h */,
+				A67CD69F19E565EE00B8878F /* SelectPersonTableViewController.m */,
+				A67CD6A119E5696600B8878F /* SubmitViewController.h */,
+				A67CD6A219E5696600B8878F /* SubmitViewController.m */,
+				A67CD65219E4AEE100B8878F /* Supporting Files */,
+				A67CD65919E4AEE100B8878F /* TakeTempViewController.h */,
+				A67CD65A19E4AEE100B8878F /* TakeTempViewController.m */,
+				A67CD68619E4C27A00B8878F /* TemperatureReading.h */,
+				A67CD68719E4C27A00B8878F /* TemperatureReading.m */,
+				A67CD69919E5322D00B8878F /* tempmon_eula.html */,
+			);
+			path = TempMonitor;
+			sourceTree = "<group>";
+		};
+		A67CD65219E4AEE100B8878F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A67CD65319E4AEE100B8878F /* Info.plist */,
+				A67CD65419E4AEE100B8878F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A67CD66E19E4AEE100B8878F /* TempMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				A67CD67119E4AEE100B8878F /* TempMonitorTests.m */,
+				A67CD66F19E4AEE100B8878F /* Supporting Files */,
+			);
+			path = TempMonitorTests;
+			sourceTree = "<group>";
+		};
+		A67CD66F19E4AEE100B8878F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A67CD67019E4AEE100B8878F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A67CD64E19E4AEE100B8878F /* TempMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67CD67519E4AEE100B8878F /* Build configuration list for PBXNativeTarget "TempMonitor" */;
+			buildPhases = (
+				A67CD64B19E4AEE100B8878F /* Sources */,
+				A67CD64C19E4AEE100B8878F /* Frameworks */,
+				A67CD64D19E4AEE100B8878F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempMonitor;
+			productName = TempMonitor;
+			productReference = A67CD64F19E4AEE100B8878F /* TempMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A67CD66A19E4AEE100B8878F /* TempMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67CD67819E4AEE100B8878F /* Build configuration list for PBXNativeTarget "TempMonitorTests" */;
+			buildPhases = (
+				A67CD66719E4AEE100B8878F /* Sources */,
+				A67CD66819E4AEE100B8878F /* Frameworks */,
+				A67CD66919E4AEE100B8878F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A67CD66D19E4AEE100B8878F /* PBXTargetDependency */,
+			);
+			name = TempMonitorTests;
+			productName = TempMonitorTests;
+			productReference = A67CD66B19E4AEE100B8878F /* TempMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A67CD64719E4AEE100B8878F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = CDC;
+				TargetAttributes = {
+					A67CD64E19E4AEE100B8878F = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = Z827RBGAJC;
+					};
+					A67CD66A19E4AEE100B8878F = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = A67CD64E19E4AEE100B8878F;
+					};
+				};
+			};
+			buildConfigurationList = A67CD64A19E4AEE100B8878F /* Build configuration list for PBXProject "TempMonitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A67CD64619E4AEE100B8878F;
+			productRefGroup = A67CD65019E4AEE100B8878F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A67CD64E19E4AEE100B8878F /* TempMonitor */,
+				A67CD66A19E4AEE100B8878F /* TempMonitorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A67CD64D19E4AEE100B8878F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67CD66119E4AEE100B8878F /* Main.storyboard in Resources */,
+				A67CD69A19E5322D00B8878F /* tempmon_eula.html in Resources */,
+				A67CD66619E4AEE100B8878F /* LaunchScreen.xib in Resources */,
+				A67CD66319E4AEE100B8878F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67CD66919E4AEE100B8878F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A67CD64B19E4AEE100B8878F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67CD69D19E5502C00B8878F /* NewPersonViewController.m in Sources */,
+				A67CD65E19E4AEE100B8878F /* PeopleViewController.m in Sources */,
+				A67CD6A319E5696600B8878F /* SubmitViewController.m in Sources */,
+				A67CD68519E4B88000B8878F /* DataManager.m in Sources */,
+				A67CD68E19E52D8600B8878F /* PeopleTableViewController.m in Sources */,
+				A67CD65819E4AEE100B8878F /* AppDelegate.m in Sources */,
+				A67CD69819E5319B00B8878F /* EulaVC.m in Sources */,
+				A67CD69519E530B200B8878F /* Reachability.m in Sources */,
+				A67CD68219E4B0F700B8878F /* Person.m in Sources */,
+				A67CD6A019E565EE00B8878F /* SelectPersonTableViewController.m in Sources */,
+				A67CD65B19E4AEE100B8878F /* TakeTempViewController.m in Sources */,
+				A67CD68819E4C27A00B8878F /* TemperatureReading.m in Sources */,
+				A67CD65519E4AEE100B8878F /* main.m in Sources */,
+				A67CD69119E52FB200B8878F /* AppManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67CD66719E4AEE100B8878F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67CD67219E4AEE100B8878F /* TempMonitorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A67CD66D19E4AEE100B8878F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A67CD64E19E4AEE100B8878F /* TempMonitor */;
+			targetProxy = A67CD66C19E4AEE100B8878F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A67CD65F19E4AEE100B8878F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67CD66019E4AEE100B8878F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A67CD66419E4AEE100B8878F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67CD66519E4AEE100B8878F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A67CD67319E4AEE100B8878F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A67CD67419E4AEE100B8878F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A67CD67619E4AEE100B8878F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TempMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A67CD67719E4AEE100B8878F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TempMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A67CD67919E4AEE100B8878F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TempMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempMonitor.app/TempMonitor";
+			};
+			name = Debug;
+		};
+		A67CD67A19E4AEE100B8878F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TempMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempMonitor.app/TempMonitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A67CD64A19E4AEE100B8878F /* Build configuration list for PBXProject "TempMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67CD67319E4AEE100B8878F /* Debug */,
+				A67CD67419E4AEE100B8878F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67CD67519E4AEE100B8878F /* Build configuration list for PBXNativeTarget "TempMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67CD67619E4AEE100B8878F /* Debug */,
+				A67CD67719E4AEE100B8878F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A67CD67819E4AEE100B8878F /* Build configuration list for PBXNativeTarget "TempMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67CD67919E4AEE100B8878F /* Debug */,
+				A67CD67A19E4AEE100B8878F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A67CD64719E4AEE100B8878F /* Project object */;
+}

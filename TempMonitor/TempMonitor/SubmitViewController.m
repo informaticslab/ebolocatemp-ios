@@ -9,9 +9,13 @@
 #import "SubmitViewController.h"
 #import "AppManager.h"
 
+#define EBOLOCATEMP_URL @"http://edemo.phiresearchlab.org/ebolocatemp/api/record"
+
 @interface SubmitViewController ()
 
 @end
+
+
 
 @implementation SubmitViewController
 
@@ -22,21 +26,32 @@
     // Do any additional setup after loading the view.
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd 'at' HH:mm:ss"];
-    
+    [formatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
 
+    
     _lblPerson.text = [NSString stringWithFormat:@"For person %@ with CDC ID %@",_person.nickname, _person.cdcId];
     _lblTemperatureInfo.text = [NSString stringWithFormat:@"With temperature of %@",_tempReading.temp];
     
     _lblTimestampInfo.text = [NSString stringWithFormat:@"Taken at %@",[formatter stringFromDate:_tempReading.dateTaken]];
+    
+    [self submitTempReadingToCdc];
 
 }
 
 -(NSData *)jsonTemperatureReadingData
 {
-    // NSDictionary for testing.
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
+    NSString *timestamp = [formatter stringFromDate:_tempReading.dateTaken];
+    
+
+    // NSDictionary for testing
     NSDictionary *tempReadingDictionary = [NSDictionary dictionaryWithObjectsAndKeys:self.person.cdcId, @"CDCID",
-                                           self.tempReading.temp, @"temp", @"thirdValue", @"thirdKey", nil];
+                                           self.tempReading.temp, @"temp",
+                                           @"ATL", @"loc",
+                                           timestamp, @"timestamp",
+                                           nil];
     
     if ([NSJSONSerialization isValidJSONObject:tempReadingDictionary]) {
         
@@ -55,6 +70,7 @@
         NSLog(@"tempReadingDictionary is not a valid JSON object.");
         return nil;
     }
+    
 }
 
 
@@ -63,17 +79,19 @@
     NSData *jsonData = [self jsonTemperatureReadingData];  // Method shown below.
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     
-    DebugLog(@"%@", jsonString);
+    NSLog(@"Submitting JSON = %@", jsonString);
     
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.myDomain.com/myscript.php"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:EBOLOCATEMP_URL] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
     [request setHTTPMethod:@"POST"];
-    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [request setValue:[NSString stringWithFormat:@"%lu", [jsonData length]] forHTTPHeaderField:@"Content-Length"];
-    [request setHTTPBody:jsonData];
+    [request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+    NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[jsonData length]];
+    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+    [request setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
     
     NSURLResponse *response = nil;
     NSError *requestError = nil;
+    
+    
     NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&requestError];
     
     if (requestError == nil) {
@@ -85,12 +103,6 @@
 }
 
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 /*
 #pragma mark - Navigation
 
@@ -100,5 +112,22 @@
     // Pass the selected object to the new view controller.
 }
 */
+//    [NSURLConnection sendAsynchronousRequest:request
+//                                       queue:[NSOperationQueue mainQueue]
+//                           completionHandler:^(NSURLResponse *response,
+//                                               NSData *data, NSError *connectionError)
+//     {
+//         if (data.length > 0 && connectionError == nil)
+//         {
+//             NSDictionary *greeting = [NSJSONSerialization JSONObjectWithData:data
+//                                                                      options:0
+//                                                                        error:NULL];
+////             self.greetingId.text = [[greeting objectForKey:@"id"] stringValue];
+////             self.greetingContent.text = [greeting objectForKey:@"content"];
+//         }
+//     }];
+//
+
+
 
 @end

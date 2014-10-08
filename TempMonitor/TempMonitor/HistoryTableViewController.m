@@ -7,6 +7,7 @@
 //
 
 #import "HistoryTableViewController.h"
+#import "AppManager.h"
 
 @interface HistoryTableViewController ()
 
@@ -32,26 +33,45 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return [APP_MGR.dataMgr.people count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    Person *person = [APP_MGR.dataMgr.people objectAtIndex:section];
+    NSString *sectionName = person.nickname;
+    return sectionName;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    Person *person = [APP_MGR.dataMgr.people objectAtIndex:section];
+    return [person.tempReadings count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"historyCellId" forIndexPath:indexPath];
     
     // Configure the cell...
+    Person *person = [APP_MGR.dataMgr.people objectAtIndex:indexPath.section];
+    TemperatureReading *tempReading = [person.tempReadings objectAtIndex:indexPath.row];
+
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MM'-'dd'-'yyyy'"];
+    NSString *date = [formatter stringFromDate:tempReading.dateTaken];
+    [formatter setDateFormat:@"HH':'mm':'ss'"];
+    NSString *time = [formatter stringFromDate:tempReading.dateTaken];
+
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ degrees ", tempReading.temp];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"on %@ at %@", date, time];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

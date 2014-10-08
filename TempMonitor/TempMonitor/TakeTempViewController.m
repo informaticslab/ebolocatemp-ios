@@ -32,11 +32,24 @@ SelectPersonTableViewController *selectPersonVC;
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-    [_txtTemperature resignFirstResponder];
     return YES;
 }
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"touchesBegan:withEvent:");
+    [self.txtTemperature endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
+}
+
 
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation

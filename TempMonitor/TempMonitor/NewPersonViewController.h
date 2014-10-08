@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Person.h"
 
-@interface NewPersonViewController : UIViewController
+@interface NewPersonViewController : UIViewController<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *txtNickname;
 @property (weak, nonatomic) IBOutlet UITextField *txtCdcId;

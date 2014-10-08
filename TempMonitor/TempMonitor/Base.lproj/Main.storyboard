@@ -21,12 +21,12 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temperature" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YMk-kH-3d0">
                                 <rect key="frame" x="250" y="113" width="102" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="done"/>
                             </textField>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1MB-ih-Yce">
-                                <rect key="frame" x="16" y="189" width="568" height="300"/>
+                                <rect key="frame" x="16" y="189" width="568" height="202"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="8Gc-VM-47h"/>
+                                    <constraint firstAttribute="height" constant="202" id="8Gc-VM-47h"/>
                                     <constraint firstAttribute="width" constant="568" id="pKv-Gw-1bp"/>
                                 </constraints>
                                 <connections>
@@ -45,14 +45,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zH-tW-GN8">
-                                <rect key="frame" x="230" y="85" width="141" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWj-Wa-nKO">
-                                <rect key="frame" x="267" y="507" width="66" height="30"/>
+                                <rect key="frame" x="267" y="415" width="66" height="30"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -60,10 +54,16 @@
                                     <segue destination="Koq-pr-V3V" kind="show" identifier="showSubmitViewSegue" id="abV-eC-AFM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zH-tW-GN8">
+                                <rect key="frame" x="230" y="84" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uWj-Wa-nKO" firstAttribute="top" secondItem="1MB-ih-Yce" secondAttribute="bottom" constant="18" id="4Nq-Ft-bHn"/>
+                            <constraint firstItem="uWj-Wa-nKO" firstAttribute="top" secondItem="1MB-ih-Yce" secondAttribute="bottom" constant="24" id="4Nq-Ft-bHn"/>
                             <constraint firstItem="4zH-tW-GN8" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="21" id="8AV-be-PTM"/>
                             <constraint firstAttribute="centerX" secondItem="4zH-tW-GN8" secondAttribute="centerX" constant="-0.5" id="HAb-VW-LqE"/>
                             <constraint firstItem="YMk-kH-3d0" firstAttribute="top" secondItem="4zH-tW-GN8" secondAttribute="bottom" constant="8" id="MwX-be-nar"/>
@@ -164,7 +164,7 @@
             <objects>
                 <tableViewController id="vEb-mc-YUj" customClass="SelectPersonTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EEb-GM-pWk">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="202"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -263,7 +263,7 @@
                                     <constraint firstAttribute="height" constant="30" id="YPe-zu-imo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CDC ID for new Person" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Egf-eb-9yP">
                                 <rect key="frame" x="193" y="198" width="200" height="30"/>
@@ -273,7 +273,7 @@
                                     <constraint firstAttribute="width" secondItem="Egf-eb-9yP" secondAttribute="height" multiplier="20:3" id="vcr-BW-5aS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="vcr-BW-5aS"/>

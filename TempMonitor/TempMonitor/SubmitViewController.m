@@ -27,7 +27,7 @@
     [formatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
 
     
-    _lblPerson.text = [NSString stringWithFormat:@"For person %@ with CDC ID %@",_person.nickname, _person.cdcId];
+    _lblPerson.text = [NSString stringWithFormat:@"For %@ with CDC ID %@",_person.nickname, _person.cdcId];
     _lblTemperatureInfo.text = [NSString stringWithFormat:@"With temperature of %@",_tempReading.temp];
     
     _lblTimestampInfo.text = [NSString stringWithFormat:@"Taken at %@",[formatter stringFromDate:_tempReading.dateTaken]];

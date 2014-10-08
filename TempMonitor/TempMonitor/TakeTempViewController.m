@@ -23,6 +23,8 @@ SelectPersonTableViewController *selectPersonVC;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _txtTemperature.delegate = self;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,6 +32,11 @@ SelectPersonTableViewController *selectPersonVC;
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [_txtTemperature resignFirstResponder];
+    return YES;
+}
 
 #pragma mark - Navigation
 // In a story board-based application, you will often want to do a little preparation before navigation

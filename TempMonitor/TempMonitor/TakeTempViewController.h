@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TakeTempViewController : UIViewController
+@interface TakeTempViewController : UIViewController<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *txtTemperature;
 

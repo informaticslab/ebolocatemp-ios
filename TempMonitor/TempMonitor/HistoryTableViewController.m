@@ -66,7 +66,7 @@
     [formatter setDateFormat:@"HH':'mm':'ss'"];
     NSString *time = [formatter stringFromDate:tempReading.dateTaken];
 
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ degrees ", tempReading.temp];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@%@ ", tempReading.temp, @"\u00B0"];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"on %@ at %@", date, time];
     
     return cell;

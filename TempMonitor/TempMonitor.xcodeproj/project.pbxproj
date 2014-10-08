@@ -26,6 +26,11 @@
 		A67CD69D19E5502C00B8878F /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD69C19E5502C00B8878F /* NewPersonViewController.m */; };
 		A67CD6A019E565EE00B8878F /* SelectPersonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD69F19E565EE00B8878F /* SelectPersonTableViewController.m */; };
 		A67CD6A319E5696600B8878F /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD6A219E5696600B8878F /* SubmitViewController.m */; };
+		A6CBF64419E5C9A400B00A84 /* 112-group.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64319E5C9A400B00A84 /* 112-group.png */; };
+		A6CBF64619E5C9C600B00A84 /* 10-medical.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64519E5C9C600B00A84 /* 10-medical.png */; };
+		A6CBF64819E5CA6E00B00A84 /* 93-thermometer.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */; };
+		A6CBF64A19E5CACD00B00A84 /* 122-stats.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64919E5CACD00B00A84 /* 122-stats.png */; };
+		A6CBF64D19E5CB1100B00A84 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CBF64C19E5CB1100B00A84 /* HistoryTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +81,12 @@
 		A67CD69F19E565EE00B8878F /* SelectPersonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPersonTableViewController.m; sourceTree = "<group>"; };
 		A67CD6A119E5696600B8878F /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
 		A67CD6A219E5696600B8878F /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+		A6CBF64319E5C9A400B00A84 /* 112-group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "112-group.png"; sourceTree = "<group>"; };
+		A6CBF64519E5C9C600B00A84 /* 10-medical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-medical.png"; sourceTree = "<group>"; };
+		A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "93-thermometer.png"; sourceTree = "<group>"; };
+		A6CBF64919E5CACD00B00A84 /* 122-stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "122-stats.png"; sourceTree = "<group>"; };
+		A6CBF64B19E5CB1100B00A84 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
+		A6CBF64C19E5CB1100B00A84 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +128,10 @@
 		A67CD65119E4AEE100B8878F /* TempMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				A6CBF64919E5CACD00B00A84 /* 122-stats.png */,
+				A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */,
+				A6CBF64519E5C9C600B00A84 /* 10-medical.png */,
+				A6CBF64319E5C9A400B00A84 /* 112-group.png */,
 				A67CD65619E4AEE100B8878F /* AppDelegate.h */,
 				A67CD65719E4AEE100B8878F /* AppDelegate.m */,
 				A67CD68F19E52FB200B8878F /* AppManager.h */,
@@ -149,6 +164,8 @@
 				A67CD68619E4C27A00B8878F /* TemperatureReading.h */,
 				A67CD68719E4C27A00B8878F /* TemperatureReading.m */,
 				A67CD69919E5322D00B8878F /* tempmon_eula.html */,
+				A6CBF64B19E5CB1100B00A84 /* HistoryTableViewController.h */,
+				A6CBF64C19E5CB1100B00A84 /* HistoryTableViewController.m */,
 			);
 			path = TempMonitor;
 			sourceTree = "<group>";
@@ -261,9 +278,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67CD66119E4AEE100B8878F /* Main.storyboard in Resources */,
+				A6CBF64A19E5CACD00B00A84 /* 122-stats.png in Resources */,
 				A67CD69A19E5322D00B8878F /* tempmon_eula.html in Resources */,
+				A6CBF64819E5CA6E00B00A84 /* 93-thermometer.png in Resources */,
 				A67CD66619E4AEE100B8878F /* LaunchScreen.xib in Resources */,
 				A67CD66319E4AEE100B8878F /* Images.xcassets in Resources */,
+				A6CBF64619E5C9C600B00A84 /* 10-medical.png in Resources */,
+				A6CBF64419E5C9A400B00A84 /* 112-group.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +311,7 @@
 				A67CD69819E5319B00B8878F /* EulaVC.m in Sources */,
 				A67CD69519E530B200B8878F /* Reachability.m in Sources */,
 				A67CD68219E4B0F700B8878F /* Person.m in Sources */,
+				A6CBF64D19E5CB1100B00A84 /* HistoryTableViewController.m in Sources */,
 				A67CD6A019E565EE00B8878F /* SelectPersonTableViewController.m in Sources */,
 				A67CD65B19E4AEE100B8878F /* TakeTempViewController.m in Sources */,
 				A67CD68819E4C27A00B8878F /* TemperatureReading.m in Sources */,

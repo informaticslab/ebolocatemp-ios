@@ -372,7 +372,7 @@
                             <outlet property="delegate" destination="KQ8-VF-jE8" id="4Tq-qo-Jf5"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="History" id="yQX-To-jYH"/>
+                    <tabBarItem key="tabBarItem" title="History" image="122-stats.png" id="yQX-To-jYH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdF-W3-SY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -422,7 +422,7 @@
         <scene sceneID="sNK-yQ-YYc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8W9-h5-wBd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="People" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="People" image="112-group.png" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="myS-Vl-dQP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -441,7 +441,7 @@
         <scene sceneID="8xg-qd-KsP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YH0-te-4V8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Take Temp" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Take Temp" image="93-thermometer.png" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1j5-4x-exx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -458,7 +458,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="112-group.png" width="32" height="21"/>
+        <image name="122-stats.png" width="27" height="19"/>
+        <image name="93-thermometer.png" width="12" height="28"/>
     </resources>
 </document>

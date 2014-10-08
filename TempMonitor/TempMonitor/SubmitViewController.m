@@ -24,6 +24,10 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters; // 100 m
+    [self.locationManager startUpdatingLocation];
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
@@ -37,6 +41,12 @@
     [self submitTempReadingToCdc];
 
 }
+- (NSString *)deviceLocation
+{
+    NSString *theLocation = [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
+    return theLocation;
+}
+
 
 -(NSData *)jsonTemperatureReadingData
 {
@@ -47,16 +57,16 @@
     
 
     // NSDictionary for testing
-    NSDictionary *tempReadingDictionary = [NSDictionary dictionaryWithObjectsAndKeys:self.person.cdcId, @"CDCID",
+    NSDictionary *tempReadingDictionary = [NSDictionary dictionaryWithObjectsAndKeys:self.person.cdcId, @"cdcId",
                                            self.tempReading.temp, @"temp",
-                                           @"ATL", @"loc",
+                                           [self deviceLocation], @"loc",
                                            timestamp, @"timestamp",
                                            nil];
     
     if ([NSJSONSerialization isValidJSONObject:tempReadingDictionary]) {
         
         NSError *error;
-        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:tempReadingDictionary options:NSJSONWritingPrettyPrinted error:&error];
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:tempReadingDictionary options:0 error:&error];
         
         if (error == nil && jsonData != nil) {
             return jsonData;

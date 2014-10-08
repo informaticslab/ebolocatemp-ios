@@ -23,12 +23,6 @@
     
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view.
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.distanceFilter = kCLDistanceFilterNone;
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters; // 100 m
-    [self.locationManager startUpdatingLocation];
-    
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
 
@@ -40,11 +34,6 @@
     
     [self submitTempReadingToCdc];
 
-}
-- (NSString *)deviceLocation
-{
-    NSString *theLocation = [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
-    return theLocation;
 }
 
 
@@ -59,7 +48,7 @@
     // NSDictionary for testing
     NSDictionary *tempReadingDictionary = [NSDictionary dictionaryWithObjectsAndKeys:self.person.cdcId, @"cdcId",
                                            self.tempReading.temp, @"temp",
-                                           [self deviceLocation], @"loc",
+                                           [APP_MGR deviceLocation], @"loc",
                                            timestamp, @"timestamp",
                                            nil];
     

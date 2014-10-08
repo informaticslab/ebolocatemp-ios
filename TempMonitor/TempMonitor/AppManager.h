@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 #import "Debug.h"
 #import "DataManager.h"
@@ -22,6 +23,8 @@
 // Core Data properties
 @property (strong, nonatomic) DataManager *dataMgr;
 @property (strong, nonatomic) Reachability *hostReachability;
+@property (nonatomic,retain) CLLocationManager *locationManager;
+
 
 + (id)singletonAppManager;
 -(BOOL)isDebugInfoEnabled;
@@ -31,5 +34,7 @@
 -(NSString *)getDeviceSystemVersion;
 -(NSString *)getDeviceSystemName;
 -(NSString *)getAppVersion;
+
+-(NSString *)deviceLocation;
 
 @end

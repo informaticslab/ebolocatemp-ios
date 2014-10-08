@@ -54,6 +54,14 @@ static AppManager *sharedAppManager = nil;
         [self processDebugSettings];
 
         
+        // Do any additional setup after loading the view.
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.distanceFilter = kCLDistanceFilterNone;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters; // 100 m
+        [self.locationManager requestWhenInUseAuthorization];
+        [self.locationManager startUpdatingLocation];
+        
+
         self.dataMgr = [[DataManager alloc  ]init];
         
     }
@@ -101,6 +109,14 @@ static AppManager *sharedAppManager = nil;
     return currVersion;
     
 }
+
+- (NSString *)deviceLocation
+{
+    NSString *theLocation = [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
+    return theLocation;
+}
+
+
 
 //-(BOOL)isInternetReachable
 //{

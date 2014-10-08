@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
 
 #import "TemperatureReading.h"
 #import "Person.h"
@@ -16,7 +15,6 @@
 
 @property (weak,nonatomic) Person *person;
 @property (weak,nonatomic) TemperatureReading *tempReading;
-@property (nonatomic,retain) CLLocationManager *locationManager;
 
 
 @property (weak, nonatomic) IBOutlet UILabel *lblPerson;

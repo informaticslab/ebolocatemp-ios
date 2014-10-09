@@ -28,6 +28,7 @@
 		A67CD6A319E5696600B8878F /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD6A219E5696600B8878F /* SubmitViewController.m */; };
 		A6C209CF19E681EB00FD1877 /* SelectPersonForTempVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C209CE19E681EB00FD1877 /* SelectPersonForTempVC.m */; };
 		A6C3C0B519E6E90200D638A6 /* AddDefaultPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C3C0B419E6E90200D638A6 /* AddDefaultPersonViewController.m */; };
+		A6C3C0B719E7027000D638A6 /* cdc_logo_tag.gif in Resources */ = {isa = PBXBuildFile; fileRef = A6C3C0B619E7027000D638A6 /* cdc_logo_tag.gif */; };
 		A6CBF64419E5C9A400B00A84 /* 112-group.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64319E5C9A400B00A84 /* 112-group.png */; };
 		A6CBF64619E5C9C600B00A84 /* 10-medical.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64519E5C9C600B00A84 /* 10-medical.png */; };
 		A6CBF64819E5CA6E00B00A84 /* 93-thermometer.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */; };
@@ -87,6 +88,7 @@
 		A6C209CE19E681EB00FD1877 /* SelectPersonForTempVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPersonForTempVC.m; sourceTree = "<group>"; };
 		A6C3C0B319E6E90200D638A6 /* AddDefaultPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDefaultPersonViewController.h; sourceTree = "<group>"; };
 		A6C3C0B419E6E90200D638A6 /* AddDefaultPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDefaultPersonViewController.m; sourceTree = "<group>"; };
+		A6C3C0B619E7027000D638A6 /* cdc_logo_tag.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cdc_logo_tag.gif; sourceTree = "<group>"; };
 		A6CBF64319E5C9A400B00A84 /* 112-group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "112-group.png"; sourceTree = "<group>"; };
 		A6CBF64519E5C9C600B00A84 /* 10-medical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-medical.png"; sourceTree = "<group>"; };
 		A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "93-thermometer.png"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		A67CD65119E4AEE100B8878F /* TempMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				A6C3C0B619E7027000D638A6 /* cdc_logo_tag.gif */,
 				A6CBF64519E5C9C600B00A84 /* 10-medical.png */,
 				A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */,
 				A6CBF64319E5C9A400B00A84 /* 112-group.png */,
@@ -293,6 +296,7 @@
 				A6CBF64819E5CA6E00B00A84 /* 93-thermometer.png in Resources */,
 				A67CD66619E4AEE100B8878F /* LaunchScreen.xib in Resources */,
 				A67CD66319E4AEE100B8878F /* Images.xcassets in Resources */,
+				A6C3C0B719E7027000D638A6 /* cdc_logo_tag.gif in Resources */,
 				A6CBF64619E5C9C600B00A84 /* 10-medical.png in Resources */,
 				A6CBF64419E5C9A400B00A84 /* 112-group.png in Resources */,
 			);

@@ -289,7 +289,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Submitting Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2g-6i-3FE">
-                                <rect key="frame" x="16" y="100" width="568" height="26"/>
+                                <rect key="frame" x="16" y="100" width="568" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -306,7 +306,7 @@
                             <constraint firstAttribute="centerX" secondItem="f6y-55-7Yt" secondAttribute="centerX" id="M1e-xD-IGK"/>
                             <constraint firstItem="Ww8-GB-CHe" firstAttribute="leading" secondItem="nQR-4Y-NRu" secondAttribute="leading" id="MNG-XC-PUz"/>
                             <constraint firstItem="haG-r7-nEJ" firstAttribute="leading" secondItem="ukY-tq-UJp" secondAttribute="leadingMargin" id="PSt-rR-lrv"/>
-                            <constraint firstItem="f6y-55-7Yt" firstAttribute="top" secondItem="K2g-6i-3FE" secondAttribute="bottom" constant="13" id="Vfa-S6-h03"/>
+                            <constraint firstItem="f6y-55-7Yt" firstAttribute="top" secondItem="K2g-6i-3FE" secondAttribute="bottom" constant="7" id="Vfa-S6-h03"/>
                             <constraint firstAttribute="centerX" secondItem="K2g-6i-3FE" secondAttribute="centerX" constant="-0.5" id="bec-uh-QOQ"/>
                             <constraint firstItem="haG-r7-nEJ" firstAttribute="leading" secondItem="f6y-55-7Yt" secondAttribute="leading" id="d7p-Wj-9GX"/>
                             <constraint firstItem="haG-r7-nEJ" firstAttribute="trailing" secondItem="f6y-55-7Yt" secondAttribute="trailing" id="dGR-uG-WUm"/>

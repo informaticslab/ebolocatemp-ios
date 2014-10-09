@@ -9,7 +9,7 @@
 #import "SubmitViewController.h"
 #import "AppManager.h"
 
-#define EBOLOCATEMP_URL @"http://edemo.phiresearchlab.org/ebolocatemp/api/record"
+#define EBOLOCATEMP_URL @"http://tempmonitor.phiresearchlab.org/ebolocatemp/api/record"
 
 @interface SubmitViewController ()
 

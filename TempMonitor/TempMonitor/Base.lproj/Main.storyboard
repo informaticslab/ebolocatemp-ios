@@ -284,6 +284,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reply Message from CDC Shows Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ww8-GB-CHe">
+                                <rect key="frame" x="16" y="268" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HZC-kZ-FIQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -294,14 +303,17 @@
                             <constraint firstItem="nQR-4Y-NRu" firstAttribute="top" secondItem="haG-r7-nEJ" secondAttribute="bottom" constant="20" id="DHC-hC-DYH"/>
                             <constraint firstItem="K2g-6i-3FE" firstAttribute="top" secondItem="c3Q-Ng-azS" secondAttribute="bottom" constant="36" id="KtM-iM-yMG"/>
                             <constraint firstAttribute="centerX" secondItem="f6y-55-7Yt" secondAttribute="centerX" id="M1e-xD-IGK"/>
+                            <constraint firstItem="Ww8-GB-CHe" firstAttribute="leading" secondItem="nQR-4Y-NRu" secondAttribute="leading" id="MNG-XC-PUz"/>
                             <constraint firstItem="haG-r7-nEJ" firstAttribute="leading" secondItem="ukY-tq-UJp" secondAttribute="leadingMargin" id="PSt-rR-lrv"/>
                             <constraint firstItem="f6y-55-7Yt" firstAttribute="top" secondItem="K2g-6i-3FE" secondAttribute="bottom" constant="13" id="Vfa-S6-h03"/>
                             <constraint firstAttribute="centerX" secondItem="K2g-6i-3FE" secondAttribute="centerX" constant="-0.5" id="bec-uh-QOQ"/>
                             <constraint firstItem="haG-r7-nEJ" firstAttribute="leading" secondItem="f6y-55-7Yt" secondAttribute="leading" id="d7p-Wj-9GX"/>
                             <constraint firstItem="haG-r7-nEJ" firstAttribute="trailing" secondItem="f6y-55-7Yt" secondAttribute="trailing" id="dGR-uG-WUm"/>
+                            <constraint firstItem="Ww8-GB-CHe" firstAttribute="top" secondItem="nQR-4Y-NRu" secondAttribute="bottom" constant="30" id="gCl-17-ysw"/>
                             <constraint firstItem="nQR-4Y-NRu" firstAttribute="trailing" secondItem="haG-r7-nEJ" secondAttribute="trailing" id="hQX-Cx-u15"/>
                             <constraint firstAttribute="centerX" secondItem="f6y-55-7Yt" secondAttribute="centerX" id="of1-C9-JG7"/>
                             <constraint firstItem="nQR-4Y-NRu" firstAttribute="leading" secondItem="haG-r7-nEJ" secondAttribute="leading" id="poL-cC-P0q"/>
+                            <constraint firstItem="Ww8-GB-CHe" firstAttribute="trailing" secondItem="nQR-4Y-NRu" secondAttribute="trailing" id="uTy-gW-N21"/>
                             <constraint firstItem="haG-r7-nEJ" firstAttribute="leading" secondItem="K2g-6i-3FE" secondAttribute="leading" id="zpq-Fc-48N"/>
                         </constraints>
                     </view>

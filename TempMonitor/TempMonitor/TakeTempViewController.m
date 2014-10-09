@@ -7,8 +7,7 @@
 //
 
 #import "TakeTempViewController.h"
-#import "SelectPersonTableViewController.h"
-#import "SubmitViewController.h"
+#import "SelectPersonForTempVC.h"
 #import "AppManager.h"
 
 
@@ -16,7 +15,6 @@
 
 @end
 
-SelectPersonTableViewController *selectPersonVC;
 
 @implementation TakeTempViewController
 
@@ -57,17 +55,14 @@ SelectPersonTableViewController *selectPersonVC;
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if([segue.identifier isEqualToString:@"showSubmitViewSegue"])
+    if([segue.identifier isEqualToString:@"showSelectPersonForTempSegue"])
     {
-        SubmitViewController *submitVC = segue.destinationViewController;
-        submitVC.person = selectPersonVC.selectedPerson;
+        SelectPersonForTempVC *selectPersonForTempVC = segue.destinationViewController;
         
-        TemperatureReading *newTemp = [APP_MGR.dataMgr addTempReading:self.txtTemperature.text forPerson:selectPersonVC.selectedPerson];
-        submitVC.tempReading = newTemp;
+        TemperatureReading *newTemp = [APP_MGR.dataMgr createTempReading:self.txtTemperature.text];
+        selectPersonForTempVC.temperature = newTemp;
         
         
-    } else if ([segue.identifier isEqualToString:@"embedSelectPersonTVC"]) {
-        selectPersonVC = (SelectPersonTableViewController *) [segue destinationViewController];
     }
 }
 

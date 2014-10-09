@@ -19,7 +19,9 @@
 -(void)dumpData;
 -(void)addTestData;
 -(Person *)addPersonWithId:(NSString*)cdcId andNickname:(NSString *)nickname;
--(TemperatureReading *)addTempReading:(NSString *)temp forPerson:(Person *)person;
+-(void)addTempReading:(TemperatureReading *)tempReading forPerson:(Person *)person;
+-(TemperatureReading *)createTempReading:(NSString *)temp;
+-(TemperatureReading *)createTempReading:(NSString *)temp forPerson:(Person *)person;
 
 
 @end

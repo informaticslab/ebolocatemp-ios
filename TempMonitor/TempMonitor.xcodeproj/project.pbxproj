@@ -26,6 +26,7 @@
 		A67CD69D19E5502C00B8878F /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD69C19E5502C00B8878F /* NewPersonViewController.m */; };
 		A67CD6A019E565EE00B8878F /* SelectPersonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD69F19E565EE00B8878F /* SelectPersonTableViewController.m */; };
 		A67CD6A319E5696600B8878F /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD6A219E5696600B8878F /* SubmitViewController.m */; };
+		A6C209CF19E681EB00FD1877 /* SelectPersonForTempVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C209CE19E681EB00FD1877 /* SelectPersonForTempVC.m */; };
 		A6CBF64419E5C9A400B00A84 /* 112-group.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64319E5C9A400B00A84 /* 112-group.png */; };
 		A6CBF64619E5C9C600B00A84 /* 10-medical.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64519E5C9C600B00A84 /* 10-medical.png */; };
 		A6CBF64819E5CA6E00B00A84 /* 93-thermometer.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */; };
@@ -81,6 +82,8 @@
 		A67CD69F19E565EE00B8878F /* SelectPersonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPersonTableViewController.m; sourceTree = "<group>"; };
 		A67CD6A119E5696600B8878F /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
 		A67CD6A219E5696600B8878F /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+		A6C209CD19E681EB00FD1877 /* SelectPersonForTempVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPersonForTempVC.h; sourceTree = "<group>"; };
+		A6C209CE19E681EB00FD1877 /* SelectPersonForTempVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPersonForTempVC.m; sourceTree = "<group>"; };
 		A6CBF64319E5C9A400B00A84 /* 112-group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "112-group.png"; sourceTree = "<group>"; };
 		A6CBF64519E5C9C600B00A84 /* 10-medical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-medical.png"; sourceTree = "<group>"; };
 		A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "93-thermometer.png"; sourceTree = "<group>"; };
@@ -128,10 +131,10 @@
 		A67CD65119E4AEE100B8878F /* TempMonitor */ = {
 			isa = PBXGroup;
 			children = (
-				A6CBF64919E5CACD00B00A84 /* 122-stats.png */,
-				A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */,
 				A6CBF64519E5C9C600B00A84 /* 10-medical.png */,
+				A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */,
 				A6CBF64319E5C9A400B00A84 /* 112-group.png */,
+				A6CBF64919E5CACD00B00A84 /* 122-stats.png */,
 				A67CD65619E4AEE100B8878F /* AppDelegate.h */,
 				A67CD65719E4AEE100B8878F /* AppDelegate.m */,
 				A67CD68F19E52FB200B8878F /* AppManager.h */,
@@ -141,6 +144,8 @@
 				A67CD69219E5309B00B8878F /* Debug.h */,
 				A67CD69619E5319B00B8878F /* EulaVC.h */,
 				A67CD69719E5319B00B8878F /* EulaVC.m */,
+				A6CBF64B19E5CB1100B00A84 /* HistoryTableViewController.h */,
+				A6CBF64C19E5CB1100B00A84 /* HistoryTableViewController.m */,
 				A67CD66219E4AEE100B8878F /* Images.xcassets */,
 				A67CD66419E4AEE100B8878F /* LaunchScreen.xib */,
 				A67CD65F19E4AEE100B8878F /* Main.storyboard */,
@@ -154,6 +159,8 @@
 				A67CD68119E4B0F700B8878F /* Person.m */,
 				A67CD69319E530B200B8878F /* Reachability.h */,
 				A67CD69419E530B200B8878F /* Reachability.m */,
+				A6C209CD19E681EB00FD1877 /* SelectPersonForTempVC.h */,
+				A6C209CE19E681EB00FD1877 /* SelectPersonForTempVC.m */,
 				A67CD69E19E565EE00B8878F /* SelectPersonTableViewController.h */,
 				A67CD69F19E565EE00B8878F /* SelectPersonTableViewController.m */,
 				A67CD6A119E5696600B8878F /* SubmitViewController.h */,
@@ -164,8 +171,6 @@
 				A67CD68619E4C27A00B8878F /* TemperatureReading.h */,
 				A67CD68719E4C27A00B8878F /* TemperatureReading.m */,
 				A67CD69919E5322D00B8878F /* tempmon_eula.html */,
-				A6CBF64B19E5CB1100B00A84 /* HistoryTableViewController.h */,
-				A6CBF64C19E5CB1100B00A84 /* HistoryTableViewController.m */,
 			);
 			path = TempMonitor;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				A67CD68819E4C27A00B8878F /* TemperatureReading.m in Sources */,
 				A67CD65519E4AEE100B8878F /* main.m in Sources */,
 				A67CD69119E52FB200B8878F /* AppManager.m in Sources */,
+				A6C209CF19E681EB00FD1877 /* SelectPersonForTempVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

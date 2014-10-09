@@ -64,7 +64,14 @@
     
 }
 
--(TemperatureReading *)addTempReading:(NSString *)temp forPerson:(Person *)person
+-(void)addTempReading:(TemperatureReading *)tempReading forPerson:(Person *)person
+{
+    
+    [person addTempReading:tempReading];
+    
+}
+
+-(TemperatureReading *)createTempReading:(NSString *)temp forPerson:(Person *)person
 {
     
     TemperatureReading *tempReading = [TemperatureReading initWithTemp:temp];
@@ -74,22 +81,32 @@
     
 }
 
+-(TemperatureReading *)createTempReading:(NSString *)temp
+{
+    
+    TemperatureReading *tempReading = [TemperatureReading initWithTemp:temp];
+    return tempReading;
+    
+}
+
+
+
 -(void)addTestData
 {
     Person *john, *sally;
     
     john = [self addPersonWithId:@"123459" andNickname:@"Jim"];
-    [self addTempReading:@"98.6" forPerson:john];
-    [self addTempReading:@"98.7" forPerson:john];
-    [self addTempReading:@"99.1" forPerson:john];
-    [self addTempReading:@"99.4" forPerson:john];
-    [self addTempReading:@"99.7" forPerson:john];
+    [self createTempReading:@"98.6" forPerson:john];
+    [self createTempReading:@"98.7" forPerson:john];
+    [self createTempReading:@"99.1" forPerson:john];
+    [self createTempReading:@"99.4" forPerson:john];
+    [self createTempReading:@"99.7" forPerson:john];
     sally = [self addPersonWithId:@"124429" andNickname:@"Jane"];
-    [self addTempReading:@"98.5" forPerson:sally];
-    [self addTempReading:@"98.8" forPerson:sally];
-    [self addTempReading:@"99.2" forPerson:sally];
-    [self addTempReading:@"99.3" forPerson:sally];
-    [self addTempReading:@"99.6" forPerson:sally];
+    [self createTempReading:@"98.5" forPerson:sally];
+    [self createTempReading:@"98.8" forPerson:sally];
+    [self createTempReading:@"99.2" forPerson:sally];
+    [self createTempReading:@"99.3" forPerson:sally];
+    [self createTempReading:@"99.6" forPerson:sally];
     
     [self saveDataToDisk];
 

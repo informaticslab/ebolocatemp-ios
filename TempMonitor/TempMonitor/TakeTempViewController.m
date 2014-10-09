@@ -21,9 +21,60 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+        if ([APP_MGR.dataMgr.people count] == 0) {
+            [self pushAddDefaultUserView];
+        }
+
+    
+//    if (APP_MGR.agreedWithEula == FALSE) {
+//        [self presentEulaModalView];
+//    }
+//    
+
     _txtTemperature.delegate = self;
 
 }
+
+
+-(void)pushAddDefaultUserView
+{
+    
+    [self performSegueWithIdentifier:@"showAddDefaultUser" sender:self];
+
+}
+
+- (void)presentEulaModalView
+{
+    static BOOL alwaysShowEula = FALSE;
+    
+    if (APP_MGR.agreedWithEula == TRUE && alwaysShowEula == FALSE)
+        return;
+    
+    // store the data
+    NSDictionary *appInfo = [[NSBundle mainBundle] infoDictionary];
+    NSString *currVersion = [NSString stringWithFormat:@"%@.%@",
+                             [appInfo objectForKey:@"CFBundleShortVersionString"],
+                             [appInfo objectForKey:@"CFBundleVersion"]];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *lastVersionEulaAgreed = (NSString *)[defaults objectForKey:@"agreedToEulaForVersion"];
+    
+    
+    // was the version number the last time EULA was seen and agreed to the
+    // same as the current version, if not show EULA and store the version number
+    if (![currVersion isEqualToString:lastVersionEulaAgreed] || alwaysShowEula) {
+        [defaults setObject:currVersion forKey:@"agreedToEulaForVersion"];
+        [defaults synchronize];
+        DebugLog(@"Data saved");
+        DebugLog(@"%@", currVersion);
+        
+        //
+        [self performSegueWithIdentifier:@"displayEulaSegue" sender:self];
+    }
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -62,8 +113,7 @@
         TemperatureReading *newTemp = [APP_MGR.dataMgr createTempReading:self.txtTemperature.text];
         selectPersonForTempVC.temperature = newTemp;
         
-        
-    }
+    } 
 }
 
 

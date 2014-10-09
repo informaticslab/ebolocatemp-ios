@@ -158,7 +158,7 @@ static AppManager *sharedAppManager = nil;
 {
     
     if (_agreedWithEula == TRUE)
-    return;
+        return;
     
     // store the data
     NSString *currVersion = [self getAppVersion];

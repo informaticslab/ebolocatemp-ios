@@ -58,7 +58,10 @@ static AppManager *sharedAppManager = nil;
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.distanceFilter = kCLDistanceFilterNone;
         self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters; // 100 m
-        [self.locationManager requestWhenInUseAuthorization];
+        if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [self.locationManager requestWhenInUseAuthorization];
+        }
+        
         [self.locationManager startUpdatingLocation];
         
 

@@ -24,13 +24,23 @@
     [super viewDidLoad];
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
 
     
     _lblPerson.text = [NSString stringWithFormat:@"For %@ with CDC ID %@",_person.nickname, _person.cdcId];
-    _lblTemperatureInfo.text = [NSString stringWithFormat:@"With temperature of %@",_tempReading.temp];
     
-    _lblTimestampInfo.text = [NSString stringWithFormat:@"Taken at %@",[formatter stringFromDate:_tempReading.dateTaken]];
+    
+    
+    _lblTemperatureInfo.text = [NSString stringWithFormat:@"With temperature of %@%@",_tempReading.temp, @"\u00B0"];
+    
+    
+    formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MM'-'dd'-'yyyy'"];
+    NSString *date = [formatter stringFromDate:_tempReading.dateTaken];
+    
+    [formatter setDateFormat:@"HH':'mm':'ss'"];
+    NSString *time = [formatter stringFromDate:_tempReading.dateTaken];
+    
+    _lblTimestampInfo.text = [NSString stringWithFormat:@"Taken on %@ at %@", date, time];
     
     [self submitTempReadingToCdc];
 

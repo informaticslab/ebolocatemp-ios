@@ -23,13 +23,12 @@
     
     [super viewDidLoad];
     
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+    
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 
     
     _lblPerson.text = [NSString stringWithFormat:@"For %@ with CDC ID %@",_person.nickname, _person.cdcId];
-    
-    
-    
     _lblTemperatureInfo.text = [NSString stringWithFormat:@"With temperature of %@%@",_tempReading.temp, @"\u00B0"];
     
     
@@ -139,4 +138,8 @@
 
 
 
+- (IBAction)btnDoneTouchUp:(id)sender {
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

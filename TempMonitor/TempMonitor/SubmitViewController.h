@@ -20,5 +20,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblPerson;
 @property (weak, nonatomic) IBOutlet UILabel *lblTemperatureInfo;
 @property (weak, nonatomic) IBOutlet UILabel *lblTimestampInfo;
+- (IBAction)btnDoneTouchUp:(id)sender;
 
 @end

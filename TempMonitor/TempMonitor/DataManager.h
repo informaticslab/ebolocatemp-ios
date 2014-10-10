@@ -22,6 +22,8 @@
 -(void)addTempReading:(TemperatureReading *)tempReading forPerson:(Person *)person;
 -(TemperatureReading *)createTempReading:(NSString *)temp;
 -(TemperatureReading *)createTempReading:(NSString *)temp forPerson:(Person *)person;
+-(BOOL)onlyOnePersonConfigured;
+-(Person *)getOnlyPerson;
 
 
 @end

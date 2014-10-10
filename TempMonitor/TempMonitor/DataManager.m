@@ -58,6 +58,25 @@
 
 }
 
+-(BOOL)onlyOnePersonConfigured
+{
+    if ((_people != nil) && ([_people count] == 1))
+        return YES;
+    else
+        return NO;
+}
+
+-(Person *)getOnlyPerson
+{
+    if (_people == nil)
+        return nil;
+
+    Person *onlyPerson = [_people objectAtIndex:0];
+
+    return onlyPerson;
+    
+}
+
 -(void)deletePerson
 {
     

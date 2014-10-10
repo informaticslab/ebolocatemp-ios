@@ -11,6 +11,7 @@
 @interface TakeTempViewController : UIViewController<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *txtTemperature;
+- (IBAction)btnDoneTouch:(id)sender;
 
 @end
 

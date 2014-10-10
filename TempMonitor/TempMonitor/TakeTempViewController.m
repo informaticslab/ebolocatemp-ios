@@ -8,6 +8,7 @@
 
 #import "TakeTempViewController.h"
 #import "SelectPersonForTempVC.h"
+#import "SubmitViewController.h"
 #import "AppManager.h"
 
 
@@ -36,6 +37,10 @@
 
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    _txtTemperature.text = @"";
+}
 
 -(void)pushAddDefaultUserView
 {
@@ -106,16 +111,37 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if([segue.identifier isEqualToString:@"showSelectPersonForTempSegue"])
+    if ( [segue.identifier isEqualToString:@"showSelectPersonForTempSegue"] )
     {
         SelectPersonForTempVC *selectPersonForTempVC = segue.destinationViewController;
         
         TemperatureReading *newTemp = [APP_MGR.dataMgr createTempReading:self.txtTemperature.text];
         selectPersonForTempVC.temperature = newTemp;
         
-    } 
+    } else if ([segue.identifier isEqualToString:@"showSubmitViewFromTempSegue"] ) {
+        
+        
+        TemperatureReading *newTemp = [APP_MGR.dataMgr createTempReading:self.txtTemperature.text];
+        [APP_MGR.dataMgr addTempReading:newTemp forPerson:[APP_MGR.dataMgr getOnlyPerson]];
+
+        SubmitViewController *submitVC = segue.destinationViewController;
+        submitVC.tempReading = newTemp;
+        submitVC.person = [APP_MGR.dataMgr getOnlyPerson];
+
+    }
+    
 }
 
 
+- (IBAction)btnDoneTouch:(id)sender {
+    
+    // if only one person than bypass this view and start segue to Submit View
+    if ([APP_MGR.dataMgr onlyOnePersonConfigured])
+        [self performSegueWithIdentifier:@"showSubmitViewFromTempSegue" sender:self];
+    else
+        [self performSegueWithIdentifier:@"showSelectPersonForTempSegue" sender:self];
+
+    
+}
 
 @end

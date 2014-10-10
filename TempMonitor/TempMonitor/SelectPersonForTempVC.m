@@ -22,6 +22,7 @@ SelectPersonTableViewController *selectPersonVC;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,12 +40,13 @@ SelectPersonTableViewController *selectPersonVC;
     // Pass the selected object to the new view controller.
     if([segue.identifier isEqualToString:@"showSubmitViewSegue"])
     {
-        [APP_MGR.dataMgr addTempReading:_temperature forPerson:selectPersonVC.selectedPerson];
-
+        
         SubmitViewController *submitVC = segue.destinationViewController;
-        submitVC.person = selectPersonVC.selectedPerson;
         submitVC.tempReading = _temperature;
         
+
+        [APP_MGR.dataMgr addTempReading:_temperature forPerson:selectPersonVC.selectedPerson];
+        submitVC.person = selectPersonVC.selectedPerson;
         
     } else if ([segue.identifier isEqualToString:@"embedSelectPersonTVC"]) {
         selectPersonVC = (SelectPersonTableViewController *) [segue destinationViewController];

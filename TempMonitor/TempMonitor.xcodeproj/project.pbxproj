@@ -26,6 +26,17 @@
 		A67CD69D19E5502C00B8878F /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD69C19E5502C00B8878F /* NewPersonViewController.m */; };
 		A67CD6A019E565EE00B8878F /* SelectPersonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD69F19E565EE00B8878F /* SelectPersonTableViewController.m */; };
 		A67CD6A319E5696600B8878F /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CD6A219E5696600B8878F /* SubmitViewController.m */; };
+		A6C0AD6919E7F7D500720F33 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C0AD5E19E7F7D500720F33 /* Contents.json */; };
+		A6C0AD6A19E7F7D500720F33 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0AD5F19E7F7D500720F33 /* Icon-40.png */; };
+		A6C0AD6B19E7F7D500720F33 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0AD6019E7F7D500720F33 /* Icon-40@2x.png */; };
+		A6C0AD6C19E7F7D500720F33 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0AD6119E7F7D500720F33 /* Icon-40@3x.png */; };
+		A6C0AD6D19E7F7D500720F33 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0AD6219E7F7D500720F33 /* Icon-60@2x.png */; };
+		A6C0AD6E19E7F7D500720F33 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0AD6319E7F7D500720F33 /* Icon-60@3x.png */; };
+		A6C0AD6F19E7F7D500720F33 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0AD6419E7F7D500720F33 /* Icon-76.png */; };
+		A6C0AD7019E7F7D500720F33 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0AD6519E7F7D500720F33 /* Icon-76@2x.png */; };
+		A6C0AD7119E7F7D500720F33 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0AD6619E7F7D500720F33 /* Icon-Small.png */; };
+		A6C0AD7219E7F7D500720F33 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0AD6719E7F7D500720F33 /* Icon-Small@2x.png */; };
+		A6C0AD7319E7F7D500720F33 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C0AD6819E7F7D500720F33 /* Icon-Small@3x.png */; };
 		A6C209CF19E681EB00FD1877 /* SelectPersonForTempVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C209CE19E681EB00FD1877 /* SelectPersonForTempVC.m */; };
 		A6C3C0B519E6E90200D638A6 /* AddDefaultPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C3C0B419E6E90200D638A6 /* AddDefaultPersonViewController.m */; };
 		A6C3C0B719E7027000D638A6 /* cdc_logo_tag.gif in Resources */ = {isa = PBXBuildFile; fileRef = A6C3C0B619E7027000D638A6 /* cdc_logo_tag.gif */; };
@@ -84,6 +95,17 @@
 		A67CD69F19E565EE00B8878F /* SelectPersonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPersonTableViewController.m; sourceTree = "<group>"; };
 		A67CD6A119E5696600B8878F /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
 		A67CD6A219E5696600B8878F /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+		A6C0AD5E19E7F7D500720F33 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		A6C0AD5F19E7F7D500720F33 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		A6C0AD6019E7F7D500720F33 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		A6C0AD6119E7F7D500720F33 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		A6C0AD6219E7F7D500720F33 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		A6C0AD6319E7F7D500720F33 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		A6C0AD6419E7F7D500720F33 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		A6C0AD6519E7F7D500720F33 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		A6C0AD6619E7F7D500720F33 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		A6C0AD6719E7F7D500720F33 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		A6C0AD6819E7F7D500720F33 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
 		A6C209CD19E681EB00FD1877 /* SelectPersonForTempVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPersonForTempVC.h; sourceTree = "<group>"; };
 		A6C209CE19E681EB00FD1877 /* SelectPersonForTempVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPersonForTempVC.m; sourceTree = "<group>"; };
 		A6C3C0B319E6E90200D638A6 /* AddDefaultPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDefaultPersonViewController.h; sourceTree = "<group>"; };
@@ -118,6 +140,7 @@
 		A67CD64619E4AEE100B8878F = {
 			isa = PBXGroup;
 			children = (
+				A6C0AD5D19E7F7D500720F33 /* AppIcon.appiconset */,
 				A67CD65119E4AEE100B8878F /* TempMonitor */,
 				A67CD66E19E4AEE100B8878F /* TempMonitorTests */,
 				A67CD65019E4AEE100B8878F /* Products */,
@@ -209,6 +232,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A6C0AD5D19E7F7D500720F33 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				A6C0AD5E19E7F7D500720F33 /* Contents.json */,
+				A6C0AD5F19E7F7D500720F33 /* Icon-40.png */,
+				A6C0AD6019E7F7D500720F33 /* Icon-40@2x.png */,
+				A6C0AD6119E7F7D500720F33 /* Icon-40@3x.png */,
+				A6C0AD6219E7F7D500720F33 /* Icon-60@2x.png */,
+				A6C0AD6319E7F7D500720F33 /* Icon-60@3x.png */,
+				A6C0AD6419E7F7D500720F33 /* Icon-76.png */,
+				A6C0AD6519E7F7D500720F33 /* Icon-76@2x.png */,
+				A6C0AD6619E7F7D500720F33 /* Icon-Small.png */,
+				A6C0AD6719E7F7D500720F33 /* Icon-Small@2x.png */,
+				A6C0AD6819E7F7D500720F33 /* Icon-Small@3x.png */,
+			);
+			name = AppIcon.appiconset;
+			path = icons/AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,13 +333,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67CD66119E4AEE100B8878F /* Main.storyboard in Resources */,
+				A6C0AD6F19E7F7D500720F33 /* Icon-76.png in Resources */,
+				A6C0AD7219E7F7D500720F33 /* Icon-Small@2x.png in Resources */,
 				A6CBF64A19E5CACD00B00A84 /* 122-stats.png in Resources */,
 				A67CD69A19E5322D00B8878F /* tempmon_eula.html in Resources */,
+				A6C0AD6D19E7F7D500720F33 /* Icon-60@2x.png in Resources */,
+				A6C0AD6C19E7F7D500720F33 /* Icon-40@3x.png in Resources */,
+				A6C0AD7019E7F7D500720F33 /* Icon-76@2x.png in Resources */,
 				A6CBF64819E5CA6E00B00A84 /* 93-thermometer.png in Resources */,
+				A6C0AD7119E7F7D500720F33 /* Icon-Small.png in Resources */,
+				A6C0AD6E19E7F7D500720F33 /* Icon-60@3x.png in Resources */,
 				A67CD66619E4AEE100B8878F /* LaunchScreen.xib in Resources */,
+				A6C0AD6919E7F7D500720F33 /* Contents.json in Resources */,
 				A67CD66319E4AEE100B8878F /* Images.xcassets in Resources */,
 				A6C3C0B719E7027000D638A6 /* cdc_logo_tag.gif in Resources */,
 				A6CBF64619E5C9C600B00A84 /* 10-medical.png in Resources */,
+				A6C0AD6B19E7F7D500720F33 /* Icon-40@2x.png in Resources */,
+				A6C0AD6A19E7F7D500720F33 /* Icon-40.png in Resources */,
+				A6C0AD7319E7F7D500720F33 /* Icon-Small@3x.png in Resources */,
 				A6CBF64419E5C9A400B00A84 /* 112-group.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

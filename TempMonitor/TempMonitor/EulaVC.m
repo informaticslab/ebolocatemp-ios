@@ -37,10 +37,11 @@ AppManager *appMgr;
     [self.webView loadHTMLString:html baseURL:nil];
     self.webView.delegate = self;
     self.btnAgree.accessibilityHint = @"Double tap to agree to the Temperature Monitor License Agreement.";
+    self.lblAppNameVersion.text = [NSString  stringWithFormat:@"Temp Monitor Version %@", [APP_MGR getAppVersion]];
 
     
     if (appMgr.agreedWithEula == TRUE) {
-        _btnAgree.title = @"Done";
+        _btnAgree.titleLabel.text = @"Done";
     }
     
 

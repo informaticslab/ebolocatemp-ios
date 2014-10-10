@@ -45,6 +45,7 @@
 		A6CBF64819E5CA6E00B00A84 /* 93-thermometer.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */; };
 		A6CBF64A19E5CACD00B00A84 /* 122-stats.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CBF64919E5CACD00B00A84 /* 122-stats.png */; };
 		A6CBF64D19E5CB1100B00A84 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CBF64C19E5CB1100B00A84 /* HistoryTableViewController.m */; };
+		A6E954EC19E82688002AEF59 /* 179-notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = A6E954EB19E82688002AEF59 /* 179-notepad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		A6CBF64919E5CACD00B00A84 /* 122-stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "122-stats.png"; sourceTree = "<group>"; };
 		A6CBF64B19E5CB1100B00A84 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
 		A6CBF64C19E5CB1100B00A84 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+		A6E954EB19E82688002AEF59 /* 179-notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "179-notepad.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		A67CD65119E4AEE100B8878F /* TempMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				A6E954EB19E82688002AEF59 /* 179-notepad.png */,
 				A6C3C0B619E7027000D638A6 /* cdc_logo_tag.gif */,
 				A6CBF64519E5C9C600B00A84 /* 10-medical.png */,
 				A6CBF64719E5CA6E00B00A84 /* 93-thermometer.png */,
@@ -349,6 +352,7 @@
 				A6C3C0B719E7027000D638A6 /* cdc_logo_tag.gif in Resources */,
 				A6CBF64619E5C9C600B00A84 /* 10-medical.png in Resources */,
 				A6C0AD6B19E7F7D500720F33 /* Icon-40@2x.png in Resources */,
+				A6E954EC19E82688002AEF59 /* 179-notepad.png in Resources */,
 				A6C0AD6A19E7F7D500720F33 /* Icon-40.png in Resources */,
 				A6C0AD7319E7F7D500720F33 /* Icon-Small@3x.png in Resources */,
 				A6CBF64419E5C9A400B00A84 /* 112-group.png in Resources */,
@@ -524,8 +528,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = TempMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

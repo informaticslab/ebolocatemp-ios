@@ -12,7 +12,8 @@
 
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *btnAgree;
+@property (weak, nonatomic) IBOutlet UIButton *btnAgree;
+@property (weak, nonatomic) IBOutlet UILabel *lblAppNameVersion;
 
 - (IBAction)btnAcceptTouchUp:(id)sender;
 

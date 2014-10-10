@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.5333333333333" y="-482.80000000000001"/>
+            <point key="canvasLocation" x="861" y="-483"/>
         </scene>
         <!--Submit View Controller-->
         <scene sceneID="tND-De-uOH">
@@ -225,6 +225,7 @@
                         <segue destination="YH0-te-4V8" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8W9-h5-wBd" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="eqW-tI-76b" kind="relationship" relationship="viewControllers" id="zej-06-s3c"/>
+                        <segue destination="fK3-xG-N2N" kind="relationship" relationship="viewControllers" id="dh2-cd-2eh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -344,6 +345,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdF-W3-SY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="400" y="1070.6800000000001"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="9vQ-Xh-3f6">
+            <objects>
+                <viewController id="fK3-xG-N2N" customClass="EulaVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t5g-uj-KlG" customClass="Eula">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aBD-HZ-jzk">
+                                <rect key="frame" x="121" y="477" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="I Agree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAcceptTouchUp:" destination="fK3-xG-N2N" eventType="touchUpInside" id="TFe-NE-B2I"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-40.png" id="Rj1-No-ray">
+                                <rect key="frame" x="16" y="37" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bja-N2-T7w">
+                                <rect key="frame" x="64" y="46" width="240" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" id="UXr-Te-fdk">
+                                <rect key="frame" x="0.0" y="85" width="320" height="384"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="179-notepad.png" id="XR1-Q4-XTR"/>
+                    <connections>
+                        <outlet property="btnAgree" destination="aBD-HZ-jzk" id="Fpd-Va-2m2"/>
+                        <outlet property="lblAppNameVersion" destination="bja-N2-T7w" id="hky-WJ-Yki"/>
+                        <outlet property="webView" destination="UXr-Te-fdk" id="0d6-sD-ruq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzF-2H-tu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368" y="804"/>
         </scene>
         <!--People Table View Controller-->
         <scene sceneID="ZEA-6k-FOf">
@@ -498,13 +547,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E51-c1-lXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="-1376"/>
+            <point key="canvasLocation" x="1266" y="-1583"/>
         </scene>
     </scenes>
     <resources>
         <image name="112-group.png" width="32" height="21"/>
         <image name="122-stats.png" width="27" height="19"/>
+        <image name="179-notepad.png" width="22" height="28"/>
         <image name="93-thermometer.png" width="12" height="28"/>
+        <image name="Icon-40.png" width="40" height="40"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
